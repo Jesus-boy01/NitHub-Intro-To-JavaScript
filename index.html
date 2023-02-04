@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let firstNumber = Number(prompt("Enter first number"));
+        let secondNumber = Number(prompt("Enter second number"));
+
+        let operator = prompt("Choose an operator(+, -, *, /, (mod or %)): ");
+
+        // if (operator == "+") {
+        //     alert(firstNumber + secondNumber);
+        // } else if (operator === "-") {
+        //     alert(firstNumber - secondNumber);
+        // } else if (operator === "*") {
+        //     alert(firstNumber * secondNumber);
+        // } else if (operator === "/") {
+        //     alert(firstNumber / secondNumber);
+        // } else if (operator === "mod" || operator == "%") {
+        //     alert(firstNumber % secondNumber);
+        // } else {
+        //     alert("Invalid Operator selected");
+        // }
+
+        switch(operator) {
+            case "+":
+                alert(firstNumber + secondNumber);
+                break;
+            case "-":
+                alert(firstNumber - secondNumber);
+                break;
+            case "*":
+                alert(firstNumber * secondNumber);
+                break;
+            case "/":
+                alert(firstNumber / secondNumber);
+                break;
+            case "%":
+            case "mod":
+                alert(firstNumber % secondNumber);
+                break;
+            default:
+                alert("Invalid operator");
+        }
+
+
+    </script>
+</body>
+</html>
