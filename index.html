@@ -10,47 +10,74 @@
     
 
     <script>
-        let firstNumber = Number(prompt("Enter first number"));
-        let secondNumber = Number(prompt("Enter second number"));
+        let userName = prompt("Enter your name: ");
+        let userHostel = prompt("Where do you stay on campus(Sodeinde, Biobaku, Mariere, Jaja, Eni-Njoku)? ");
 
-        let operator = prompt("Choose an operator(+, -, *, /, (mod or %)): ");
+        if (userHostel.toLowerCase() === "sodeinde") {
+            console.log(`${userName}: Fun fact, ${userHostel} is considered one of the best hostels on campus`);     for(let num = 1; num <= 20; num++){
+                console.log(userHostel);
+            }
+        } else if (userHostel.toLowerCase() === "biobaku") {
+            console.log(`${userName}: Fun fact, ${userHostel} is considered one of the largest hostels on campus`);
+            for(let num = 1; num <= 20; num++){
+                console.log(userHostel);
+            }
+        } else if (userHostel.toLowerCase() === "mariere") {
+            console.log(`${userName}: Fun fact, ${userHostel} is considered one of the cleanest hostels on campus`);
+            for(let num = 1; num <= 20; num++){
+                console.log(userHostel);
+            }
+        } else if (userHostel.toLowerCase() === "jaja") {
+            console.log(`${userName}: Fun fact, ${userHostel} is considered one of the loudest hostels on campus`);
+            for(let num = 1; num <= 20; num++){
+                console.log(userHostel);
+            }
+        } else if (userHostel.toLowerCase() === "eni-njoku") {
+            console.log(`${userName}: Fun fact, ${userHostel} is considered one of the dirtiest hostels on campus`);
+            for(let num = 1; num <= 20; num++){
+                console.log(userHostel);
+            }
+        } else {
+            console.log("Invalid Hostel");
+        } 
 
-        // if (operator == "+") {
-        //     alert(firstNumber + secondNumber);
-        // } else if (operator === "-") {
-        //     alert(firstNumber - secondNumber);
-        // } else if (operator === "*") {
-        //     alert(firstNumber * secondNumber);
-        // } else if (operator === "/") {
-        //     alert(firstNumber / secondNumber);
-        // } else if (operator === "mod" || operator == "%") {
-        //     alert(firstNumber % secondNumber);
-        // } else {
-        //     alert("Invalid Operator selected");
-        // }
-
-        switch(operator) {
-            case "+":
-                alert(firstNumber + secondNumber);
+        switch (userHostel.toLowerCase()) {
+            case "sodeinde":
+                console.log(`Fun fact ${userName}, ${userHostel} is considered one of the best hostels on campus`);
+                for (let i = 1; i <= 20; i++) {
+                    console.log("Sodeinde");
+                }
                 break;
-            case "-":
-                alert(firstNumber - secondNumber);
+            case "biobaku":
+                console.log(`Fun fact ${userName}, ${userHostel} is considered one of the largest hostels on campus`);
+                for (let i = 1; i <= 20; i++) {
+                    console.log("Biobaku");
+                }
+                break; 
+            case "mariere":
+                console.log(`Fun fact ${userName}, ${userHostel} is considered one of the cleanest hostels on campus`);
+                for (let i = 1; i <= 20; i++) {
+                    console.log("Mariere");
+                }
                 break;
-            case "*":
-                alert(firstNumber * secondNumber);
+            case "jaja":
+                console.log(`Fun fact ${userName}, ${userHostel} is considered one of the loudest hostels on campus`);
+                for (let i = 1; i <= 20; i++) {
+                    console.log("Jaja");
+                }
                 break;
-            case "/":
-                alert(firstNumber / secondNumber);
-                break;
-            case "%":
-            case "mod":
-                alert(firstNumber % secondNumber);
+            case "eni-njoku":
+                console.log(`Fun fact ${userName}, ${userHostel} is considered one of the cleanest hostels on campus`);
+                for (let i = 1; i <= 20; i++) {
+                    console.log("Eni-Njoku");
+                }
                 break;
             default:
-                alert("Invalid operator");
+                console.log("Invalid Hostel");
+                break;
         }
 
-
+        
     </script>
 </body>
 </html>
