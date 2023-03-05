@@ -1,5 +1,4 @@
-const myArray = [1, 2, 3, 4, 5];
-
+let userArray = prompt("Enter a list of numbers").split("");
 function shuffleArray(array) {
     for (let index = array.length - 1; index > 0; index--) {
         let shuffle = Math.floor(Math.random() * index);
@@ -11,4 +10,4 @@ function shuffleArray(array) {
     return array;
 }
 
-console.log(shuffleArray(myArray));
+console.log(shuffleArray(userArray));
